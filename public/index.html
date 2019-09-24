@@ -9,7 +9,6 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,11 +23,89 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Batman Clicky Game</title>
+    
+    <style type="src/App.css">
+      .card {
+        background: white;
+        border-radius: 2px;
+        height: 250px;
+        margin: 1rem;
+        position: relative;
+        width: 350px;
+        -webkit-box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+                box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+        text-align: left;
+      }
+
+      .card > .img-containter {
+        height: 90%;
+        overflow: hidden;
+        text-align: center;
+        background: purple;
+      }
+
+      .card > .img-containter > img {
+        width: 60%
+      }
+
+      .card > .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 20px;
+      }
+    </style>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="wrapper">
+        <div class="header>"
+           class="title"><h1>Batman Clicky Game</h1></div>
+          <div class="scores">
+            "Points Scored: "
+            "0"
+            "Highscore: "
+            "0"
+          </div>
+        <div class="card">
+          <div class="img-container">
+            <img src="https://batman.fandom.com/wiki/Bane?file=Bane.jpg">
+          </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+              <img src="https://batman.fandom.com/wiki/Deathstroke?file=Deathstroke_Vol_3_3_Textless.jpg">
+            </div>
+          </div>
+          <div class="card">
+              <div class="img-container">
+                <img src="https://batman.fandom.com/wiki/The_Joker_(Heath_Ledger)?file=Heath_Ledger_as_the_Joker.JPG">
+              </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                  <img src="https://batman.fandom.com/wiki/Two-Face?file=Animated_Two-Face_2.jpg">
+                </div>
+              </div>
+              <div class="card">
+                  <div class="img-container">
+                    <img src="https://batman.fandom.com/wiki/Scarecrow?file=Scarecrow_new_52.jpg">
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                      <img src="https://batman.fandom.com/wiki/Black_Mask?file=200px-Black_Mask_1.jpg">
+                    </div>
+                  </div>
+                  <div class="card">
+                      <div class="img-container">
+                        <img src="https://batman.fandom.com/wiki/Harley_Quinn?file=Harley_Quinn_Vol_3_1_Warren_Louw_Textless_Variant.png">
+                      </div>
+                    </div>
+        
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +116,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript" src="src/App.js"></script>
   </body>
 </html>
+
+
